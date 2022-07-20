@@ -1,15 +1,21 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import "dart:developer" as developer;
+import 'package:logger/logger.dart';
 
 class CameraPreviewView extends StatelessWidget {
-  const CameraPreviewView({required this.cameraController});
+  CameraPreviewView({required this.cameraController});
+
+  final logger = Logger(
+      printer: PrettyPrinter()
+  );
 
   final CameraController cameraController;
 
   @override
   Widget build(BuildContext context) {
-    developer.log("here");
-    return Container();
+    logger.d("here");
+    return MaterialApp(
+      home: CameraPreview(this.cameraController),
+    );
   }
 }
