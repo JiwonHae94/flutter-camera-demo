@@ -47,9 +47,11 @@
 	<true/>
 
 
+
     <!-- Permission options for the `camera` group -->
     <key>NSCameraUsageDescription</key>
-    <string>camera</string>
-
+    <string>Enable camera permission to grant access to camera device on this device</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Enable microphone usage permission to grant access to on this device</string>
 </dict>
 </plist>

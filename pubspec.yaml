@@ -40,6 +40,8 @@ dependencies:
   # camera permission
   camera: ^0.10.0
 
+  # logger
+  logger: ^1.1.0
 
 dev_dependencies:
   flutter_test:
